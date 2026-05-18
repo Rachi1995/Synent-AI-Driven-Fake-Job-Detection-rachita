@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Fake Job Intelligence Console</title>
+    <!-- Tailwind Framework -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Architecture Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Icon Assets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            background-image: radial-gradient(at 10% 10%, rgba(6, 182, 212, 0.15) 0px, transparent 45%), radial-gradient(at 90% 90%, rgba(59, 130, 246, 0.12) 0px, transparent 45%);
+            background-attachment: fixed;
+        }
+        
+        .font-display {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        /* Glassmorphic Paneling */
+        
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.45);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+        }
+        
+        .glass-card-static {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+        }
+        /* Cyber Neon Layout Accents */
+        
+        .neon-glow-cyan {
+            text-shadow: 0 0 15px rgba(6, 182, 212, 0.5);
+        }
+        
+        .neon-edge-blue:focus-within {
+            border-color: #2563eb;
+            box-shadow: 0 0 20px rgba(37, 99, 235, 0.25);
+        }
+        
+        .neon-action-btn {
+            background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+            box-shadow: 0 4px 20px rgba(6, 182, 212, 0.3);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .neon-action-btn:hover {
+            box-shadow: 0 0 25px rgba(6, 182, 212, 0.6);
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+
+<body class="min-h-screen text-gray-100 flex flex-col justify-between">
+
+    <!-- System Header -->
+    <header class="w-full max-w-7xl mx-auto px-6 py-5 flex justify-between items-center border-b border-white/5 bg-slate-950/20 backdrop-blur-md">
+        <div class="flex items-center gap-3">
+            <div class="h-8 w-8 rounded-md bg-cyan-500/10 border border-cyan-500/40 flex items-center justify-center">
+                <i class="fa-solid fa-user-shield text-cyan-400 text-sm"></i>
+            </div>
+            <span class="font-display font-bold text-lg tracking-wider text-white">VERIFY<span class="text-cyan-400">.JOB</span></span>
+        </div>
+        <div class="flex items-center gap-2 text-xs text-gray-400">
+            <span class="h-2 w-2 rounded-full bg-cyan-400 animate-pulse"></span>
+            <span class="font-mono tracking-widest uppercase">NLP-Core Online</span>
+        </div>
+    </header>
+
+    <!-- Main Workspace Dashboard Grid -->
+    <main class="w-full max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-4 gap-6 my-8 flex-grow">
+
+        <!-- Left Column: Metrics & Architecture Details -->
+        <section class="lg:col-span-1 flex flex-col gap-5">
+            <!-- Inspection Targets Info Card -->
+            <div class="glass-panel rounded-2xl p-5 flex flex-col gap-4">
+                <div>
+                    <h3 class="font-display text-xs font-bold tracking-widest text-cyan-400 uppercase mb-1">Analytical Surface</h3>
+                    <p class="text-xs text-gray-400">What our verification node tracks within unstructured text bodies:</p>
+                </div>
+
+                <div class="space-y-2 text-xs">
+                    <div class="p-2.5 rounded-lg bg-white/5 flex items-center gap-2.5">
+                        <i class="fa-solid fa-font text-blue-400 w-4"></i>
+                        <span class="text-gray-300 font-medium">Job Title Structures</span>
+                    </div>
+                    <div class="p-2.5 rounded-lg bg-white/5 flex items-center gap-2.5">
+                        <i class="fa-solid fa-building text-cyan-400 w-4"></i>
+                        <span class="text-gray-300 font-medium">Company Meta-Data Context</span>
+                    </div>
+                    <div class="p-2.5 rounded-lg bg-white/5 flex items-center gap-2.5">
+                        <i class="fa-solid fa-money-bill-wave text-emerald-400 w-4"></i>
+                        <span class="text-gray-300 font-medium">Salary Promise Ratios</span>
+                    </div>
+                    <div class="p-2.5 rounded-lg bg-white/5 flex items-center gap-2.5">
+                        <i class="fa-solid fa-language text-purple-400 w-4"></i>
+                        <span class="text-gray-300 font-medium">Hiring Urgency Keywords</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Future Implementations Roadmap Card -->
+            <div class="glass-panel rounded-2xl p-5 bg-gradient-to-b from-slate-900/40 to-cyan-950/10">
+                <h3 class="font-display text-xs font-bold tracking-widest text-blue-400 uppercase mb-3">System Roadmap</h3>
+                <ul class="space-y-2.5 text-[11px] text-gray-400">
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-circle-nodes text-cyan-500/50 mt-0.5"></i> Multi-language processing models</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-passport text-cyan-500/50 mt-0.5"></i> Automated domain authenticity loops</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-robot text-cyan-500/50 mt-0.5"></i> Real-time web scraping browser extension</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Right Columns: Core Processing Arena -->
+        <section class="lg:col-span-3 flex flex-col gap-6">
+
+            <!-- Project Persona Statement -->
+            <div>
+                <h1 class="font-display text-3xl md:text-4xl font-bold text-white tracking-tight mb-2">
+                    AI-Driven <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 neon-glow-cyan">Fake Job Detection</span>
+                </h1>
+                <p class="text-xs md:text-sm text-gray-400 max-w-2xl leading-relaxed">
+                    Protecting job seekers from advanced recruitment fraud. Paste any suspicious job advertisement, corporate email text, or offer description below to evaluate legitimacy signatures.
+                </p>
+            </div>
+
+            <!-- Input Form Framework Area -->
+            <div class="glass-panel rounded-2xl p-5 md:p-6 flex flex-col gap-5 neon-edge-blue border border-white/5 transition-all duration-300">
+                <div>
+                    <label for="jobInput" class="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">
+                        Text Target Payload (Job Description)
+                    </label>
+                    <textarea id="jobInput" rows="7" class="w-full bg-slate-950/70 border border-white/10 rounded-xl p-4 text-gray-200 text-sm placeholder-gray-600 focus:outline-none focus:border-cyan-500 transition-colors resize-none" placeholder="Example red flags: 'Earn ₹5 lakh monthly from home. Instant hiring, no experience needed. Pay registration fee to secure your laptop via WhatsApp...'"></textarea>
+                </div>
+
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+                    <div class="text-xs text-gray-500 flex gap-4">
+                        <span id="charCounter">0 characters</span>
+                    </div>
+                    <button id="submitBtn" onclick="processPostAnalysis()" class="neon-action-btn w-full sm:w-auto py-3 px-8 rounded-xl text-xs font-bold font-display uppercase tracking-wider text-white cursor-pointer">
+                        <i class="fa-solid fa-shield-cat mr-2"></i> Run Fraud Evaluation Scan
+                    </button>
+                </div>
+            </div>
+
+            <!-- Results Output Shell (Hidden Initially) -->
+            <div id="resultsInboundShell" class="hidden opacity-0 transform translate-y-4 transition-all duration-500">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+                    <!-- Main System Verdict Panel -->
+                    <div id="verdictBackground" class="md:col-span-2 glass-panel rounded-2xl p-5 flex flex-col justify-between border-l-4">
+                        <div>
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-gray-400 block mb-1">Evaluation Output</span>
+                            <h2 id="verdictTitle" class="font-display text-2xl font-bold mb-2">--</h2>
+                            <p id="verdictSummary" class="text-xs text-gray-400 leading-relaxed">--</p>
+                        </div>
+                        <div id="flagBadgeContainer" class="mt-4 flex flex-wrap gap-2">
+                            <!-- Injected flagged strings go here -->
+                        </div>
+                    </div>
+
+                    <!-- Confidence Gauge Register -->
+                    <div class="glass-panel rounded-2xl p-5 flex flex-col items-center justify-between text-center bg-gradient-to-b from-white/[0.01] to-white/[0.03]">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-gray-400 block self-start">Confidence Matrix</span>
+
+                        <div class="my-3 relative flex items-center justify-center">
+                            <div class="h-24 w-24 rounded-full border-4 border-dashed border-white/10 flex flex-col items-center justify-center">
+                                <span id="confidenceValue" class="font-display text-xl font-bold text-white">0%</span>
+                                <span class="text-[8px] tracking-widest text-cyan-400 uppercase font-bold">Accuracy</span>
+                            </div>
+                        </div>
+
+                        <p class="text-[11px] text-gray-400 italic">Statistical threshold confirmed</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Structural Footer -->
+    <footer class="w-full max-w-7xl mx-auto px-6 py-5 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+        <div>&copy; 2026 AI Fake Job Detection Framework Engine.</div>
+        <div class="flex gap-4 font-medium">
+            <span class="text-cyan-500/70"><i class="fa-solid fa-circle text-[8px] mr-1"></i> Portfolio Mode Active</span>
+        </div>
+    </footer>
+
+    <!-- Interactive Logic Controller -->
+    <script>
+        const jobInput = document.getElementById('jobInput');
+        const charCounter = document.getElementById('charCounter');
+
+        // Dynamic typing length analysis
+        jobInput.addEventListener('input', () => {
+            charCounter.textContent = `${jobInput.value.length.toLocaleString()} characters`;
+        });
+
+        // Communication wrapper to Flask endpoint
+        async function processPostAnalysis() {
+            const description = jobInput.value.trim();
+            const submitBtn = document.getElementById('submitBtn');
+            const shell = document.getElementById('resultsInboundShell');
+
+            if (!description) {
+                alert("Verification Exception: Target payload context can't be empty.");
+                return;
+            }
+
+            // Lock button and switch UI to computing status
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = '0.5';
+            submitBtn.innerHTML = `<i class="fa-solid fa-spinner animate-spin mr-2"></i> Mapping Vectors...`;
+
+            try {
+                const queryPipeline = await fetch('/analyze', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        description: description
+                    })
+                });
+
+                const payload = await queryPipeline.json();
+
+                if (!queryPipeline.ok) {
+                    throw new Error(payload.error || 'Pipeline validation node failure.');
+                }
+
+                // Make panel visible smoothly
+                shell.classList.remove('hidden');
+                setTimeout(() => {
+                    shell.classList.remove('opacity-0', 'translate-y-4');
+                }, 50);
+
+                const vBg = document.getElementById('verdictBackground');
+                const vTitle = document.getElementById('verdictTitle');
+                const vSummary = document.getElementById('verdictSummary');
+                const cVal = document.getElementById('confidenceValue');
+                const badgeBox = document.getElementById('flagBadgeContainer');
+
+                cVal.textContent = `${payload.confidence}%`;
+                badgeBox.innerHTML = ''; // Clean old traces
+
+                if (payload.verdict === 'Fraudulent') {
+                    vBg.style.borderColor = '#f43f5e'; // Rose pink
+                    vTitle.className = "font-display text-2xl font-bold text-rose-400";
+                    vTitle.innerHTML = `<i class="fa-solid fa-triangle-exclamation mr-2"></i> Fraud Signature Confirmed`;
+                    vSummary.textContent = "High architectural correlation to known scams. Our neural processing metrics identified structural anomalies, unrealistic recruitment mechanics, or demands for payments/fees.";
+
+                    // Show specific triggered keywords if found
+                    if (payload.flags_found.length > 0) {
+                        payload.flags_found.forEach(flag => {
+                            badgeBox.innerHTML += `<span class="px-2.5 py-1 text-[10px] rounded-md bg-rose-500/10 border border-rose-500/30 text-rose-300 font-mono">Trigger: "${flag}"</span>`;
+                        });
+                    } else {
+                        badgeBox.innerHTML = `<span class="px-2.5 py-1 text-[10px] rounded-md bg-rose-500/10 border border-rose-500/30 text-rose-300 font-mono">Trigger: Structural Context Anomalies</span>`;
+                    }
+                } else {
+                    vBg.style.borderColor = '#10b981'; // Emerald Green
+                    vTitle.className = "font-display text-2xl font-bold text-emerald-400";
+                    vTitle.innerHTML = `<i class="fa-solid fa-circle-check mr-2"></i> Clean Linguistic Profile`;
+                    vSummary.textContent = "Posting falls comfortably within typical parameters. The phrasing syntax, validation references, and task assignment demands follow legitimate corporate standards.";
+                    badgeBox.innerHTML = `<span class="px-2.5 py-1 text-[10px] rounded-md bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-mono">Safe Vector Match</span>`;
+                }
+
+                // Auto Scroll directly to visual findings
+                shell.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'nearest'
+                });
+
+            } catch (err) {
+                alert(`System Error: ${err.message}`);
+            } finally {
+                // Reset button parameters
+                submitBtn.disabled = false;
+                submitBtn.style.opacity = '1';
+                submitBtn.innerHTML = `<i class="fa-solid fa-shield-cat mr-2"></i> Run Fraud Evaluation Scan`;
+            }
+        }
+    </script>
+</body>
+
+</html>
